@@ -8,7 +8,7 @@ $(function() {
 
 function chooseKey(hash) {
   var key = $(".music-key").filter(function() { return this.hash == hash })
-  if (key) {
+  if (key.length == 1) {
     location.hash = hash
     $(".current-key").text(key.text())
     $(".playlist").show()
