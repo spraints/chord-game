@@ -1,3 +1,31 @@
 body {
   padding-top: 70px;
 }
+
+.playlist {
+  display: none;
+}
+
+.game {
+  visibility: hidden;
+}
+
+/* READY? SET! */
+
+body.playable .game {
+  visibility: visible;
+}
+
+/* GO! */
+
+body.playing nav {
+  display: none;
+}
+
+body.playing .playlist {
+  display: block;
+}
+
+body.playing .start-game {
+  display: none;
+}
