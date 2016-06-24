@@ -4,49 +4,73 @@
     <title>Chord Game</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="site.css">
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
-    <ul class="chord-sequence">
-      <li class="chord">M</li>
-      <li class="chord">min</li>
-      <li class="chord">M</li>
-      <li class="chord">sus</li>
-      <li class="chord">M</li>
-      <li class="chord">maj7</li>
-      <li class="chord">M</li>
-      <li class="chord">7</li>
-      <li class="chord">M</li>
-      <li class="chord">min7</li>
-      <li class="chord">M</li>
-      <li class="chord">aug(+)</li>
-      <li class="chord">M</li>
-      <li class="chord">dim(o)</li>
-      <li class="chord">M</li>
-      <li class="chord">+6</li>
-      <li class="chord">M</li>
-      <li class="chord">+9</li>
-      <li class="chord">M</li>
-      <li class="chord">11</li>
-      <li class="chord">M</li>
-      <li class="chord">13</li>
-      <li class="chord">M</li>
-    </ul>
-    <ul class="keys">
-      <li class="key">C</li>
-      <li class="key">D&#x266d;</li>
-      <li class="key">D</li>
-      <li class="key">E&#x266d;</li>
-      <li class="key">E</li>
-      <li class="key">F</li>
-      <li class="key">G&#x266d;</li>
-      <li class="key">G</li>
-      <li class="key">A&#x266d; / G&#x2ddf;</li>
-      <li class="key">A</li>
-      <li class="key">B&#x266d;</li>
-      <li class="key">B</li>
-    </ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Chord Game</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav music-keys">
+            <li><a class="music-key" href="#CM">C</a></li>
+            <li><a class="music-key" href="#Dm">D&#x266d;</a></li>
+            <li><a class="music-key" href="#DM">D</a></li>
+            <li><a class="music-key" href="#Em">E&#x266d;</a></li>
+            <li><a class="music-key" href="#EM">E</a></li>
+            <li><a class="music-key" href="#FM">F</a></li>
+            <li><a class="music-key" href="#Gm">G&#x266d;</a></li>
+            <li><a class="music-key" href="#GM">G</a></li>
+            <li><a class="music-key" href="#Am">A&#x266d;</a></li>
+            <li><a class="music-key" href="#AM">A</a></li>
+            <li><a class="music-key" href="#Bm">B&#x266d;</a></li>
+            <li><a class="music-key" href="#BM">B</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="random-key" href="#">Random Key</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <ul class="playlist">
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">min</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">sus</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">maj7</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">7</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">min7</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">aug(+)</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">dim(o)</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">+6</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">+9</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">11</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+          <li class="playlist-item"><span class="chord">13</span></li>
+          <li class="playlist-item"><span class="chord">M</span></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
