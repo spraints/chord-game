@@ -29,12 +29,16 @@ function randomElement(coll) {
 function startGame() {
   var body = $("body")
   var items = $(".playlist-item")
+  items.removeClass("current").removeClass("adjacent").hide()
   body.addClass("playing")
   var i = 0
   var gameStep = function() {
     if (i < items.length) {
-      i++
-      setTimeout(gameStep, 100)
+      if (i > 1) { $(items[i-2]).slideUp() }
+      if (i > 0) { $(items[i-1]).addClass("adjacent").removeClass("current") }
+      $(items[i]).removeClass("adjacent").addClass("current").show()
+      if (i < items.length) { $(items[i+1]).addClass("adjacent").slideDown() }
+      i++; setTimeout(gameStep, 2000)
     } else {
       body.removeClass("playing")
     }
