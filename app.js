@@ -28,6 +28,16 @@ function randomElement(coll) {
 
 function startGame() {
   var body = $("body")
+  var items = $(".playlist-item")
   body.addClass("playing")
-  setTimeout(function() { body.removeClass("playing") }, 5000)
+  var i = 0
+  var gameStep = function() {
+    if (i < items.length) {
+      i++
+      setTimeout(gameStep, 100)
+    } else {
+      body.removeClass("playing")
+    }
+  }
+  gameStep()
 }
